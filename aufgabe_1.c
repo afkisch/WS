@@ -74,7 +74,6 @@ void adcIntHandler (void){
 
    if(idx+1==BUFFER_SIZE) idx = 0; else idx++;
 
-
    GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7, 0x00);
    if (sum > 5) GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_0, 0xFF);
    if (sum > 25) GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_1, 0xFF);
