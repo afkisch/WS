@@ -64,8 +64,8 @@ void setup(void){// konfiguriert den MiKrocontroller
 void adcIntHandler (void){
    uint32_t adcInputValue;
    ADCSequenceDataGet(ADC0_BASE,3,&adcInputValue);
-   // Bitte Code hier einfuegen
    
+   // Bitte Code hier einfuegen
    adcInputValue *= adcInputValue;
    adcInputValue /= BUFFER_SIZE;
    sum -= buffer[idx];
